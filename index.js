@@ -11,7 +11,7 @@ const timeout = require('connect-timeout')
 const registerRoutes = require('./routes/register');
 const userRoutes = require('./routes/user');
 
-const PORT = 3000;
+const PORT = process.env.port || 3000;
 const app = express();
 
 // DB Connection
