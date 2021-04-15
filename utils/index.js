@@ -10,7 +10,7 @@ const db_connect = (mongoose) => {
     };
     const DB_SERVER = '127.0.0.1:27017';
     const DB_NAME = 'drplus';
-    const DB_URL = `mongodb://${DB_SERVER}/${DB_NAME}`;
+    const DB_URL = 'mongodb+srv://shahzaib-imran-94:mongo1994@cluster0.nevzk.mongodb.net/drplus?retryWrites=true&w=majority';
 
     mongoose.connect(DB_URL, DB_OPTIONS)
     .then(() => console.log('DB Connected'))
